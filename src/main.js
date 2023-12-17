@@ -1,6 +1,24 @@
-import { createApp } from 'vue'
-import App from './App.vue'
-import router from './router'
-import store from './store'
+// noinspection ES6UnusedImports,JSFileReferences
 
-createApp(App).use(store).use(router).mount('#app')
+import { createApp } from 'vue';
+import App from './App.vue';
+import router from './router';
+import store from './store';
+// eslint-disable-next-line no-unused-vars
+import LoginComponent from './components/Login.vue';
+// eslint-disable-next-line no-unused-vars
+import SignupComponent from './components/Signup.vue';
+// eslint-disable-next-line no-unused-vars
+import TaskFormComponent from './components/TaskForm.vue';
+// eslint-disable-next-line no-unused-vars
+import TaskListComponent from './components/TaskList.vue';
+
+// Your existing code...
+
+
+const app = createApp(App);
+
+app.use(store);
+app.use(router);
+
+app.mount('#app');
